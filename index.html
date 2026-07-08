@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KK KITCHEN | Fast Food & Healthy Home Food</title>
+    <meta name="description" content="Order delicious fast food and ghar ka khana from KK KITCHEN online." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <a href="#" class="brand">KK KITCHEN</a>
+        <div class="nav-links">
+          <a href="#menu">Menu</a>
+          <a href="#order">Order</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <div>
+          <p class="eyebrow">Fast Food • Healthy Home Food</p>
+          <h1>Fresh taste, fast delivery, home-style comfort.</h1>
+          <p class="hero-text">
+            Order your favorite chowmin, burgers, curries, roti, rice, and wholesome ghar ka khana from KK KITCHEN.
+          </p>
+          <a href="#menu" class="btn primary">Explore Menu</a>
+        </div>
+        <div class="hero-card">
+          <h3>Today’s Special</h3>
+          <p>2 Butter roti + daal tadka + zeera rice</p>
+          <span>₹180</span>
+          <p>contact for this special offer</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="menu" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Menu</p>
+          <h2>Fast Food & Healthy Ghar Ka Khana</h2>
+        </div>
+
+        <div class="menu-section">
+          <h3>Fast Food</h3>
+          <div id="fast-food-menu" class="menu-grid"></div>
+        </div>
+
+        <div class="menu-section">
+          <h3>Healthy Ghar Ka Khana</h3>
+          <div id="healthy-menu" class="menu-grid"></div>
+        </div>
+      </section>
+
+      <section id="order" class="section order-section">
+        <div class="cart-card">
+          <div class="section-heading left">
+            <p class="eyebrow">Your Order</p>
+            <h2>Cart Summary</h2>
+          </div>
+          <div id="cart-items" class="cart-items"></div>
+          <div class="cart-total">
+            <div><span>Subtotal</span><strong id="subtotal">₹0</strong></div>
+            <div><span>Delivery</span><strong>₹40</strong></div>
+            <div class="grand-total"><span>Total</span><strong id="total">₹30</strong></div>
+          </div>
+        </div>
+
+        <div class="checkout-card">
+          <div class="section-heading left">
+            <p class="eyebrow">Checkout</p>
+            <h2>Place Your Order</h2>
+          </div>
+
+          <form id="checkout-form" class="checkout-form">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="tel" id="phone" placeholder="Phone Number" required />
+            <textarea id="address" rows="3" placeholder="Delivery Address" required></textarea>
+
+            <label for="payment-method">Payment Method</label>
+            <select id="payment-method">
+              <option value="cod">Cash / UPI on Delivery</option>
+            </select>
+
+            <div id="card-fields" class="hidden">
+              <input type="text" id="card-name" placeholder="Card Holder Name" />
+              <input type="text" id="card-number" placeholder="Card Number" />
+              <div class="card-row">
+                <input type="text" id="expiry" placeholder="MM/YY" />
+                <input type="text" id="cvv" placeholder="CVV" />
+              </div>
+            </div>
+
+            <button type="submit" class="btn primary full">Place Order</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <p>Contact: +91 84450 18989</p>
+      <p>Address: Near Lee grand banquet hall Rithani,Partapur, Meerut</p>
+      <p>© 2026 KK KITCHEN. All rights reserved.</p>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
